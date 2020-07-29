@@ -29,7 +29,7 @@ body{
     background-size: auto 65%;
 }
 
-@media screen and (max-width: 375px){
+@media screen and (max-width: 1200px){
     body{
         background-size: auto 50%;
     }
@@ -69,7 +69,7 @@ nav a{
     padding: 10px;
 }
 
-@media screen and (max-width: 375px){
+@media screen and (max-width: 1200px){
     nav a{
         padding: 5px;
     }
