@@ -3,7 +3,6 @@
 :root{
     --back: #EBEAD6;
     --text: #505050;
-    --transition: all 0.3s ease 0s;
 }
 
 a.active {
@@ -37,7 +36,6 @@ a{
     font-size: 17px;
     color: var(--text);
     text-decoration: none;
-    transition: var(--transition);
 }
 
 #links a:hover{
