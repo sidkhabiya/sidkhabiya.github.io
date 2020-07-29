@@ -73,6 +73,9 @@ nav a{
     nav a{
         padding: 5px;
     }
+    a{
+        font-size: 13px;
+    }
 }
 
 #container{
