@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=PT+Sans:wght@400;700&display=swap');
+
+:root{
+    --back: #EBEAD6;
+    --text: #505050;
+    --transition: all 0.3s ease 0s;
+}
+
+a.active {
+    color: red;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    height: 100%;
+    overflow: auto;
+}
+
+body{
+    background: var(--back);
+    background-image:url("./images/Picture.png");
+    background-position: center bottom;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    background-size: auto 70%;
+}
+
+a{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 17px;
+    color: var(--text);
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+#links a:hover{
+    color: red;
+}
+
+p{
+    font-family: PT Sans;
+    text-decoration: none;
+    color: var(--text);
+}
+
+nav{
+    list-style: none;
+    margin-top: 40px;
+    padding: 0;
+    text-align: center;
+}
+nav li{
+    display:inline;
+}
+
+nav a{
+    display: inline-block;
+    padding: 10px;
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+}
+
+.about {
+    width: 400px;
+    margin: 300px;
+    text-align: center;
+}
+
+.name{
+    font-size: 36px;
+}

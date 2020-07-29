@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=PT+Sans:wght@400;700&display=swap');
+
+:root{
+    --back: #EBEAD6;
+    --text: #505050;
+    --transition: all 0.3s ease 0s;
+}
+
+a.active {
+    color: red;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    height: 100%;
+    overflow: auto;
+}
+
+body{
+    background: var(--back);
+}
+
+a{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 17px;
+    color: var(--text);
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+#links a:hover{
+    color: red;
+}
+
+p{
+    font-family: PT Sans;
+    text-decoration: none;
+}
+
+nav{
+    list-style: none;
+    margin-top: 40px;
+    padding: 0;
+    text-align: center;
+}
+nav li{
+    display:inline;
+}
+
+nav a{
+    display: inline-block;
+    padding: 10px;
+}
+
+.center{
+    max-height: 90%;
+    max-width: 90%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 200px auto;
+}
+
+.container{
+    padding: 1em 0;
+    float: left;
+    width: 50%;
+}
+
+@media screen and (max-width: 700px){
+    .container{
+      display: block;
+      width: 100%;
+    }
+}
+  
+@media screen and (min-width: 1000px){
+    .container{
+      width: 33.33333%;
+    }
+}
+  
+.picture {
+    position: relative;
+    width: 90%;
+    max-width: 400px;
+    margin: auto;
+    overflow: hidden;
+}
+  
+.picture .overlay {
+    background: rgba(0,0,0,0.7);
+    position: absolute;
+    height: 99%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    -webkit-transition: all 0.4s ease-in-out 0s;
+    -moz-transition: all 0.4s ease-in-out 0s;
+    transition: all 0.4s ease-in-out 0s;
+}
+  
+.picture:hover .overlay{
+    opacity: 1;
+}
+  
+.image{
+    width: 100%;
+}
+  
+.content-details {
+    position: absolute;
+    text-align: center;
+    padding-left: 1em;
+    padding-right: 1em;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+  
+.picture:hover .content-details{
+    top: 50%;
+    left: 50%;
+    opacity: 1;
+}
+  
+.content-details h3{
+    color: #fff;
+    font-weight: 500;
+    letter-spacing: 0.15em;
+    margin-bottom: 0.5em;
+    text-transform: uppercase;
+}
+  
+.content-details p{
+    color: #fff;
+    font-size: 1em;
+}
+  
+.fadeIn-bottom{
+    top: 80%;
+}
