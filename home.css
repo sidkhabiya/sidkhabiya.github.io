@@ -26,7 +26,13 @@ body{
     background-position: center bottom;
     background-repeat:no-repeat;
     background-attachment:fixed;
-    background-size: auto 70%;
+    background-size: auto 65%;
+}
+
+@media screen and (max-height: 700px){
+    body{
+        background-size: auto 50%;
+    }
 }
 
 a{
