@@ -29,7 +29,7 @@ body{
     background-size: auto 65%;
 }
 
-@media screen and (max-height: 700px){
+@media screen and (max-width: 375px){
     body{
         background-size: auto 50%;
     }
@@ -67,6 +67,12 @@ nav li{
 nav a{
     display: inline-block;
     padding: 10px;
+}
+
+@media screen and (max-width: 375px){
+    nav a{
+        padding: 5px;
+    }
 }
 
 #container{

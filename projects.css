@@ -58,6 +58,12 @@ nav a{
     padding: 10px;
 }
 
+@media screen and (max-width: 375px){
+    nav a{
+        padding: 5px;
+    }
+}
+
 .center{
     max-height: 90%;
     max-width: 90%;
