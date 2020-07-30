@@ -35,6 +35,12 @@ body{
     }
 }
 
+@media screen and (max-height: 800px){
+    body{
+        background-size: auto 60%;
+    }
+}
+
 a{
     font-family: Lato;
     font-style: normal;
