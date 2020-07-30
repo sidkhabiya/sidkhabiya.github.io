@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=PT+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet');
 
 :root{
     --back: #EBEAD6;
@@ -26,7 +26,7 @@ body{
 }
 
 a{
-    font-family: Lato;
+    font-family: Roboto;
     font-style: normal;
     font-weight: bold;
     font-size: 17px;
@@ -39,7 +39,7 @@ a{
 }
 
 p{
-    font-family: PT Sans;
+    font-family: Roboto;
     text-decoration: none;
 }
 
@@ -78,13 +78,13 @@ nav a{
     margin: 250px auto;
 }
 
-@media screen and (max-width: 1200px){
+@media screen and (max-width: 500px){
     .center{
         margin: 90px auto;
     }
 }
 
-@media screen and (max-height: 800px){
+@media screen and (max-height: 800px) and (max-width: 400px){
     .center{
         margin: 170px auto;
     }
